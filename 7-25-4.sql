@@ -1,3 +1,4 @@
+
 --문제1
 select a.employee_id ,a.first_name, c.department_name, b.first_name  as "매니저"from employees a,employees b ,departments c
           where b.employee_id (+)= a.manager_id
